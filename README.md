@@ -1,16 +1,20 @@
-ascii generator based on colors
+Simple ascii art generator with different options
 
-you need to specify all the options!
+to build you will need goland
+```console
+sudo apt install golang-go
+./build.sh
+./asciiArtGenerator
+```
 
-options:
+to use the program:
+```console
+./asciiArtGenerator -w [output image width] -h [output image height] -i [path to image] -o [path to output]
+```
 
--w [n], -h [m] : width and hight of desired art
--i [path] -o [path] : path to input image and path to ouput image
--r : if used the image is reversed
--c : if used, contrast of the image is higher
+there are also optional options:
+```console
+-r : reversed luminocity
+-c : higher contrast
 
-to build type: ```go build asciiArtGenerator.go```
-
-have fun
-Piotr Rodkiewicz
-
+```

@@ -96,6 +96,9 @@ func main() {
 	scaleX := inputWidth / userDefinedWidth
 	scaleY := inputHeight / userDefinedHeight
 
+	if scaleX == 0 {scaleX++}
+	if scaleY == 0 {scaleY++}
+
 	println(asciiArtLogo, "scale Y:  ", scaleY, " scale X: ", scaleX)
 
 	////////////////////////////////////////////////////////////////////////////////////
